@@ -1,6 +1,6 @@
 import React from 'react';
 import Router from './Router'
-import { MovieController} from './context/WebCamContext'
+import { WebCamController} from './context/WebCamContext'
 import './App.css';
 
 
@@ -8,9 +8,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-    <MovieController>
+    <WebCamController>
     <Router />
-    </MovieController>
+    </WebCamController>
   </div>
   );
 }
