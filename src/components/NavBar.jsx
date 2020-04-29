@@ -1,15 +1,16 @@
 import React from 'react'
-import {Navbar, Nav, Link, Button, FormControl, Form} from 'react-bootstrap'; 
+import {Navbar, Nav, Button, FormControl, Form} from 'react-bootstrap'; 
+import {Link} from 'react-router-dom'
 
 class NavBar extends React.Component{
 render() {
     return (
     
   <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="#home">Geek Trotter</Navbar.Brand>
+    <Navbar.Brand href='/'>Geek Trotter</Navbar.Brand>
     <Nav className="mr-auto">
-      <Nav.Link href="#home">Accueil</Nav.Link>
-      <Nav.Link href="#features">Recherches</Nav.Link>
+      <Nav.Link href ='/'>Accueil</Nav.Link>
+      <Nav.Link href='/Recherche'>Recherche</Nav.Link>
     </Nav>
     <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
