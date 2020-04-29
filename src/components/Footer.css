@@ -1,0 +1,42 @@
+.footer{
+    Background-color : rgb(33, 36, 37);
+    color: whitesmoke;
+    font-style: italic;
+    font-size: smaller;
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 0px;
+    width : 100%
+    
+}
+.footer a {
+font-size: xx-small;
+}
+
+.firstColum {
+    display: flex;
+    flex-direction: column;
+    max-width : 50%;
+    
+}
+.secondColumn {
+   display: flex;
+   
+  justify-content: center;
+
+}
+
+img{
+    max-width: 30px;
+    height : 20px;
+    margin : 5px ;
+    
+    align-content: flex-end;
+
+    
+}
+
+a {
+    font-size: small;
+
+}
