@@ -6,7 +6,8 @@
     margin-bottom: 0px;
     position: absolute;
     bottom: 0px;
-    width : 100%
+    width : 100%;
+    display: flex;
     
 }
 .footer a {
@@ -15,6 +16,7 @@ font-size: xx-small;
 
 .firstColum {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     max-width : 50%;
     
@@ -26,12 +28,12 @@ font-size: xx-small;
 
 }
 
-img{
+.truc{
     max-width: 30px;
     height : 20px;
     margin : 5px ;
-    
-    align-content: flex-end;
+    display: flex;
+    justify-content: center;
 
     
 }

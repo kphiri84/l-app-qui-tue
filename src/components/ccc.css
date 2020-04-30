@@ -1,0 +1,10 @@
+.ok{
+    height: 500px;
+   width: 100%;
+}
+
+img:active{
+    display: flex;
+    justify-content: center; 
+    max-width: 100%;
+}

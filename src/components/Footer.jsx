@@ -12,9 +12,9 @@ render() {
     <a>Mentions Legales </a>
 </div>
 <div className="secondColumn">
-    <img src ="https://cdn.icon-icons.com/icons2/1183/PNG/512/1490133467-social-icons07_82213.png" alt='facebook'/>
-    <img src ="https://cdn.icon-icons.com/icons2/1582/PNG/512/instagram_108043.png" alt='instagram'/>
-    <img src ="https://upload.wikimedia.org/wikipedia/commons/f/fb/Google-plus-circle-icon-png.png" alt='google+'/>
+    <img className ="truc" src ="https://cdn.icon-icons.com/icons2/1183/PNG/512/1490133467-social-icons07_82213.png" alt='facebook'/>
+    <img className ="truc" src ="https://cdn.icon-icons.com/icons2/1582/PNG/512/instagram_108043.png" alt='instagram'/>
+    <img className ="truc" src ="https://upload.wikimedia.org/wikipedia/commons/f/fb/Google-plus-circle-icon-png.png" alt='google+'/>
  </div> 
  </div>
     )}
