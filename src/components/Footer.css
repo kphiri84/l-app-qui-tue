@@ -9,6 +9,7 @@
     width : 100%
     
 }
+
 .footer a {
 font-size: xx-small;
 }
@@ -16,27 +17,21 @@ font-size: xx-small;
 .firstColum {
     display: flex;
     flex-direction: column;
-    max-width : 50%;
-    
+    max-width : 50%;    
 }
-.secondColumn {
-   display: flex;
-   
-  justify-content: center;
 
+.secondColumn {
+   display: flex;   
+  justify-content: center;
 }
 
 img{
     max-width: 30px;
     height : 20px;
-    margin : 5px ;
-    
-    align-content: flex-end;
-
-    
+    margin : 5px ;    
+    align-content: flex-end;    
 }
 
 a {
     font-size: small;
-
 }

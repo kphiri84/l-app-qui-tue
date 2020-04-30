@@ -33,31 +33,25 @@ return (
 <>
 <h1>Vers le confinement et au dela </h1>
 
-<p>Parce qu’un confiné n’est pas forcement un imbécile encerclé …
+<p>Parce qu’un confiné n’est pas forcement un imbécile encerclé …<br/>
 Nous vous proposons de partir ou vous le souhaitez selon vos envie depuis votre canapé ! 
-Et parce qu’il fait beau quelque part …. voici nos quelques idées du jour 
+Et parce qu’il fait beau quelque part …. <br/>Voici nos quelques idées du jour 
 </p>
 
 <div className="iframe">
 {cam.map(e =>{ 
     return(
+ <div className = 'homepage'>
+    
     <iframe 
     title={e.title}
     width="300"
     height="200"
-    src={e.player.lifetime.embed}/>
+    src={e.player.lifetime.embed}/><h6>{e.title}</h6>
+    </div>
  )} )
 }
- {/* <iframe
-    title={title}
-    width="300"
-    height="200"
-    src={cam}/>
-<iframe
-   title={title}
-    width="300"
-    height="200"
-    src={cam}/></div> */}
+
 </div>
 </>
 )
