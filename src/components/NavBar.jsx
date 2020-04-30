@@ -9,7 +9,7 @@ render() {
   <Navbar bg="dark" variant="dark">
     <Navbar.Brand href='/'>Geek Trotter</Navbar.Brand>
     <Nav className="mr-auto">
-      <NavLink href ='/'>Accueil</NavLink>
+      <NavLink to ='/'>Accueil</NavLink>
       <NavLink to='/Recherche'>Recherche</NavLink>
     </Nav>
     <Form inline>

@@ -1,46 +1,84 @@
-import React, { Component } from 'react'
-import Carousel from 'react-bootstrap/Carousel'
-
-class Envie extends Component {
-  render (){
-  return (
-<Carousel>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=First slide&bg=373940"
-      alt="First slide"
-    />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=Second slide&bg=282c34"
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=Third slide&bg=20232a"
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>)}}
+import React, {useState, useEffect} from 'react'
+import './Footer.css'
+import {Carousel} from 'react-bootstrap'
+import './Envie.css'
+import axios from 'axios'
+import Button from 'react-bootstrap/Button'
 
 
-export default Envie 
+const Carouse = () => {
+
+  const [camCategory, setCamCategory] = useState([]);
+  const [category , setCategory] = useState('ile');
+
+  const getData = () =>{
+    axios.get(`https://api.windy.com/api/webcams/v2/list/category=${category}?show=webcams:location,player&key=UFebPKjuVv8a28DWFr2z9hcQQa2NlDZS`)
+    .then(response => setCamCategory((response.data.result.webcams)))
+}
+useEffect (() => {
+getData()
+
+},[category]) 
+
+
+
+console.log(category)
+console.log(camCategory)
+    return (
+        <div className="test">
+        <Carousel> 
+        <Carousel.Item>
+          <img
+            name ='mountain'
+            className="ok"
+            src="https://cdn.france-montagnes.com/sites/default/files/styles/header_webzine/public/header/banniere_23.jpg?itok=PfHNBrxl"
+            alt="First slide"/>
+          <Carousel.Caption>    
+          <h3>Partir à la montagne</h3><Button variant="success"onClick ={() => setCategory('mountain') }>Découvrez la selection </Button>
+          </Carousel.Caption>
+          </Carousel.Item>
+          
+          
+          <Carousel.Item> 
+          <img
+            className="ok"
+            src="https://fr.sx-magazine-wp.sixt.io/magazine/wp-content/uploads/sites/3/2018/06/paradise-697151_1920.jpg"
+            alt="Seconde slide"/>
+          <Carousel.Caption>
+            <h3>Partir à la mer</h3>
+            <Button variant="success"onClick ={() =>setCategory('beach')}>Découvrez la selection </Button> 
+        </Carousel.Caption>
+        </Carousel.Item>
+        
+
+       <Carousel.Item> 
+       
+          <img
+            className="ok"
+            src="https://i.f1g.fr/media/eidos/805x453_crop/2019/12/10/XVM61ef0d94-1a9d-11ea-9fbb-497aff12b716.jpg"
+            alt="Third slide"/>
+            <Carousel.Caption> 
+         <h3>Partir dans les plus belles villes</h3>
+         <Button variant="success" onClick ={() => setCategory('city')}>Découvrez la selection </Button>  
+        </Carousel.Caption> </Carousel.Item>  
+        
+      
+       </Carousel> 
+      <>
+      {camCategory.map(e =>{ 
+          return(
+            <div>
+          <iframe 
+          title={e.title}
+          width="300"
+          height="200"
+          src={e.player.lifetime.embed}/><h6>{e.title}</h6>
+      </div>
+          )})}
+      </>
+      
+      </div>
+    )
+}
+
+export default Carouse

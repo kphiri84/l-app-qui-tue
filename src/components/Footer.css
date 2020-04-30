@@ -25,11 +25,12 @@ font-size: xx-small;
   justify-content: center;
 }
 
-img{
+.RS{
     max-width: 30px;
     height : 20px;
-    margin : 5px ;    
-    align-content: flex-end;    
+    margin : 5px ;
+    display: flex;
+    justify-content: center;    
 }
 
 a {

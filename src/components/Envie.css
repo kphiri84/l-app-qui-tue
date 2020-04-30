@@ -1,4 +1,17 @@
-.carousel img{
-    width: 100%;
-    height:500px; 
+.ok{
+    height: 200px;
+   width: 50%;
 }
+
+img:active{
+    display: flex;
+    justify-content: center; 
+    max-width: 50%;
+}
+
+h3{
+    color : 
+}
+ p{
+     color : Black
+ }
