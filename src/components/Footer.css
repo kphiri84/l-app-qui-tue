@@ -1,13 +1,12 @@
 .footer{
-    Background-color : rgb(33, 36, 37);
+    Background-color : rgba(15,113,115) !important;
     color: whitesmoke;
     font-style: italic;
     font-size: smaller;
-    margin-bottom: 0px;
+    margin-top: 115px;
     position: relative;
     bottom: 0px;
     width : 100%
-    
 }
 
 .footer a {

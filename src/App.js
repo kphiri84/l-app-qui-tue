@@ -1,7 +1,7 @@
 import React from 'react';
 import Router from './Router'
 import { WebCamController} from './context/WebCamContext'
-import './App.css';
+import './App.css'
 
 
 
