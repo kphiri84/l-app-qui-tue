@@ -35,7 +35,7 @@ return (
 
 <p>Parce qu’un confiné n’est pas forcement un imbécile encerclé …<br/>
 Nous vous proposons de partir ou vous le souhaitez selon vos envie depuis votre canapé ! 
-Et parce qu’il fait beau quelque part …. <br/>Voici nos quelques idées du jour 
+<br/>Voici nos quelques idées du jour 
 </p>
 
 <div className="iframe">

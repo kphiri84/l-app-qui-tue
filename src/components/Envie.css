@@ -5,13 +5,11 @@
 
 img:active{
     display: flex;
+    flex-direction: row;
     justify-content: center; 
     max-width: 50%;
 }
 
-h3{
-    color : 
-}
  p{
      color : Black
  }

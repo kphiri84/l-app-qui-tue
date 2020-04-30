@@ -9,10 +9,10 @@ import Button from 'react-bootstrap/Button'
 const Carouse = () => {
 
   const [camCategory, setCamCategory] = useState([]);
-  const [category , setCategory] = useState('ile');
+  const [category , setCategory] = useState('');
 
   const getData = () =>{
-    axios.get(`https://api.windy.com/api/webcams/v2/list/category=${category}?show=webcams:location,player&key=UFebPKjuVv8a28DWFr2z9hcQQa2NlDZS`)
+    axios.get(`https://api.windy.com/api/webcams/v2/list/limit=10?category=${category}?show=webcams:location,player&key=UFebPKjuVv8a28DWFr2z9hcQQa2NlDZS`)
     .then(response => setCamCategory((response.data.result.webcams)))
 }
 useEffect (() => {
@@ -61,19 +61,20 @@ console.log(camCategory)
          <h3>Partir dans les plus belles villes</h3>
          <Button variant="success" onClick ={() => setCategory('city')}>Découvrez la selection </Button>  
         </Carousel.Caption> </Carousel.Item>  
+        </Carousel> 
         
-      
-       </Carousel> 
       <>
       {camCategory.map(e =>{ 
           return(
-            <div>
-          <iframe 
+            
+           <>  
+         <iframe 
           title={e.title}
           width="300"
           height="200"
-          src={e.player.lifetime.embed}/><h6>{e.title}</h6>
-      </div>
+          src={e.player.lifetime.embed} />
+          <h6>{e.title}</h6></>
+      
           )})}
       </>
       
