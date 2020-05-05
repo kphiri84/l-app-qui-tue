@@ -1,20 +1,21 @@
 import React from 'react'
-import {Navbar, Nav, Button, FormControl, Form} from 'react-bootstrap'; 
-
+import {Navbar, Nav, Button, FormControl, Form, Carousel} from 'react-bootstrap'; 
+import  { NavLink }  from 'react-router-dom'
+import './NavBar.css'
 
 class NavBar extends React.Component{
 render() {
     return (
     
-  <Navbar bg="dark" variant="dark">
+  <Navbar className="dark" >
     <Navbar.Brand href='/'>Geek Trotter</Navbar.Brand>
     <Nav className="mr-auto">
-      <Nav.Link href ='/'>Accueil</Nav.Link>
-      <Nav.Link href='/Recherche'>Recherche</Nav.Link>
+      <NavLink to ='/'>Accueil</NavLink>
+      <NavLink to='/Recherche'>Recherche</NavLink>
     </Nav>
     <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-info">Rechercher</Button>
+      <Button className="boutton" variant="outline-info">Rechercher</Button>
     </Form>
   </Navbar>
     )}

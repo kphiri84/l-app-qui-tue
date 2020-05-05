@@ -1,15 +1,14 @@
 import React from 'react'
+import DemoV4 from './Envie'
 
-
-class Search extends React.Component {
-render(){
+function Search(){
 
 return (
 <>
-
+ <DemoV4 />
 </>
 )
 }
-}
+
 
 export default Search 
