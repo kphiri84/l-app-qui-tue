@@ -15,7 +15,7 @@ return (
 <Switch>
 <Route exact path = "/" component={Home} />
 <Route path= "/Recherche" component={Search} />
-<Route path= "/resultat" component={Test} />
+<Route path= "/resultat/:categoryName" component={Test} />
 </Switch>   
 <Footer />
 </>

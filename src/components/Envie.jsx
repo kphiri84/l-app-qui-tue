@@ -35,7 +35,7 @@ console.log(camCategory)
             alt="First slide"/>
           <Carousel.Caption>    
           <h3>Partir à la montagne</h3>
-          <Link to='/resultat'>
+          <Link to={`/resultat/mountain`}>
           <Button className="btn-primary"onClick ={() => setCategory('mountain') }>Découvrez la selection </Button>
           </Link>
           </Carousel.Caption>
@@ -47,7 +47,7 @@ console.log(camCategory)
             alt="Seconde slide"/>
           <Carousel.Caption>
             <h3>Partir à la mer</h3>
-            <Link to='/resultat'>
+            <Link to={`/resultat/beach`}>
             <Button className="btn-primary"onClick ={() =>setCategory('beach')}>Découvrez la selection </Button> 
             </Link>
           </Carousel.Caption>
@@ -59,7 +59,7 @@ console.log(camCategory)
             alt="Third slide"/>
           <Carousel.Caption> 
           <h3>Partir dans les plus belles villes</h3>
-          <Link to='/resultat'>
+          <Link to={`/resultat/city`}>
           <Button className="btn-primary btn btn-primary" onClick ={() => setCategory('city')}>Découvrez la selection </Button>  
           </Link>
           </Carousel.Caption> 
