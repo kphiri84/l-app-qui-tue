@@ -7,20 +7,19 @@ import Search from './components/Search'
 import Test from './components/Test'
 
 class Router extends React.Component {
-render(){
-
-return (
-<>
-<NavBar />
-<Switch>
-<Route exact path = "/" component={Home} />
-<Route path= "/Recherche" component={Search} />
-<Route path= "/resultat/:categoryName" component={Test} />
-</Switch>   
-<Footer />
-</>
-)
-}
+  render() {
+    return(
+      <>
+        <NavBar />
+        <Switch>
+          <Route exact path = "/" component={Home} />
+          <Route path= "/Recherche" component={Search} />
+          <Route path= "/resultat/:categoryName" component={Test} />
+        </Switch>   
+        <Footer />
+      </>
+    )
+  }
 }
 
 export default Router 

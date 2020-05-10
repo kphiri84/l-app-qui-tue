@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import './Footer.css'
-import {Carousel} from 'react-bootstrap'
-import './Envie.css'
+import './test.css'
 import axios from 'axios'
-import {useParams} from 'react-router-dom'
+import {useParams, Link} from 'react-router-dom'
 
 
 const Test = () => {
@@ -26,35 +25,30 @@ const Test = () => {
    
   function titre(){
     if(categoryName === 'mountain'){
-      return 'Montagne'
+      return 'montagnes'
     }
     else if(categoryName === 'beach'){
-      return 'Mers'
+      return 'mers'
     }
     else{
-      return 'Villes'
+      return 'villes'
     }
   }
 
-  function lieu(){
-    if(categoryName === 'mountain'){
-      return 'mountain'
-    }
-    else if(categoryName === 'beach'){
-      return 'beach'
-    }
-    else{
-      return 'city'
-    }
-  }
+  return(  
+    <div className="body">
+      <Link to="/Recherche">
+        <p className="precedent"><svg class="bi bi-caret-left" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M10 12.796L4.519 8 10 3.204v9.592zm-.659.753l-5.48-4.796a1 1 0 010-1.506l5.48-4.796A1 1 0 0111 3.204v9.592a1 1 0 01-1.659.753z" clip-rule="evenodd"/>
+          </svg>Précédent
+        </p>
+      </Link>
 
-  return(
-      
-    <>
-     <h2>{titre()}</h2>
-    {camCategory.map(e =>{ 
+      <h1>Découvrir les {titre()}</h1>
+      <div className="Iframe1">
+      {camCategory.map(e =>{ 
       return( 
-          <div className="Iframe">  
+        <div className="Iframe">  
           <iframe 
             title={e.title}
             width="500"
@@ -64,7 +58,9 @@ const Test = () => {
         </div>
       )
     })}
-    </>
+    </div>
+    </div>
   )
 }
+
 export default Test

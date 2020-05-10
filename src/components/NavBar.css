@@ -8,15 +8,16 @@
 
 .Title{
     color: rgba(39,41,50);
+    font-family: "Carnet-de-voyage";
 }
 
 .Lien{
-    color: rgba(231,236,239) !important;
+    color: rgba(15,113,115) !important;
     font-size: 20px;
     margin-top: 10px;
     margin-left: 10px;
 }
 
-.Lien:hover{
-    text-decoration: none;
+a:hover{
+    text-decoration: none !important;
 }

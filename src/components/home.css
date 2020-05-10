@@ -1,23 +1,29 @@
-.iframe{
-display : flex ; 
-flex-direction: row;
-justify-content: space-around;
-border-radius: 5px;
-padding: 15px;
-margin: 10px;
-background-color: (231,236,239) ;
+.iframe {
+  display : flex ; 
+  flex-direction: row;
+  justify-content: space-around;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  background-color: rgba(231,236,239) !important
 }
 
 body{
-   background-color:rgba(216, 164, 127) !important;
+  background-color:rgba(216, 164, 127) !important;
 }
 
 .body{
-    padding: 35px;
+  padding: 35px;
+  background-color: rgba(15,113,115,0.5) ;
+}
+
+p ,h1{
+   color: rgba(216, 164, 127) !important;
+   font-family: "Carnet-de-voyage";
 }
 
 .btn{
-    color: rgba(231,236,239) !important;
-    border: 1px solid rgba(231,236,239) !important;
+  color: rgba(231,236,239) !important;
+  border: 1px solid rgba(231,236,239) !important;
 }
 

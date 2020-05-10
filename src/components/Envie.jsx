@@ -34,10 +34,10 @@ console.log(camCategory)
             src="https://cdn.france-montagnes.com/sites/default/files/styles/header_webzine/public/header/banniere_23.jpg?itok=PfHNBrxl"
             alt="First slide"/>
           <Carousel.Caption>    
-          <h3>Partir à la montagne</h3>
-          <Link to={`/resultat/mountain`}>
-          <Button className="btn-primary"onClick ={() => setCategory('mountain') }>Découvrez la selection </Button>
-          </Link>
+            <h3>Partir à la montagne</h3>
+            <Link to={`/resultat/mountain`}>
+              <Button className="btn-primary"onClick ={() => setCategory('mountain') }>Découvrez la selection </Button>
+            </Link>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item> 
@@ -48,7 +48,7 @@ console.log(camCategory)
           <Carousel.Caption>
             <h3>Partir à la mer</h3>
             <Link to={`/resultat/beach`}>
-            <Button className="btn-primary"onClick ={() =>setCategory('beach')}>Découvrez la selection </Button> 
+              <Button className="btn-primary"onClick ={() =>setCategory('beach')}>Découvrez la selection </Button> 
             </Link>
           </Carousel.Caption>
         </Carousel.Item>
@@ -58,15 +58,13 @@ console.log(camCategory)
             src="https://i.f1g.fr/media/eidos/805x453_crop/2019/12/10/XVM61ef0d94-1a9d-11ea-9fbb-497aff12b716.jpg"
             alt="Third slide"/>
           <Carousel.Caption> 
-          <h3>Partir dans les plus belles villes</h3>
-          <Link to={`/resultat/city`}>
-          <Button className="btn-primary btn btn-primary" onClick ={() => setCategory('city')}>Découvrez la selection </Button>  
-          </Link>
+            <h3>Partir dans les plus belles villes</h3>
+            <Link to={`/resultat/city`}>
+              <Button className="btn-primary btn btn-primary" onClick ={() => setCategory('city')}>Découvrez la selection </Button>  
+            </Link>
           </Carousel.Caption> 
         </Carousel.Item>  
-      </Carousel> 
-  
-      
+      </Carousel>  
     </div>
   )
 }

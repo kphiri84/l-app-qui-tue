@@ -1,0 +1,23 @@
+.precedent{
+    color: rgba(231,236,239) !important;
+    display: flex;
+    justify-content: flex-start;
+    
+    align-items: baseline;
+    font-size: 18px;
+}
+
+.body{
+    background-color: rgba(15,113,115,0.5);
+}
+
+p, h1, h4 {
+    color: rgba(216, 164, 127) !important;
+}
+
+.Iframe1 {
+    background-color: #e7ecef33;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 2px 4px  ;
+}

@@ -10,6 +10,7 @@
 .Iframe{
     padding: 10px;
 }
+
 img:active{
     display: flex;
     flex-direction: row;
@@ -19,4 +20,5 @@ img:active{
 
  h3{
      color : rgba(39,41,50);
+     -webkit-text-stroke: 0.3px rgb(255, 255, 255);
  }
