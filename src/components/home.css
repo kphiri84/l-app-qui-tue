@@ -5,16 +5,20 @@
   border-radius: 5px;
   padding: 15px;
   margin: 10px;
-  background-color: rgba(231,236,239) !important
+  /* background-color: rgba(231,236,239) !important */
 }
 
-body{
-  background-color:rgba(216, 164, 127) !important;
+.body{
+  background-image: url("https://image.freepik.com/photos-gratuite/salon-vue-mer-maison-plage-ete-luxe-canape-table-basse_42251-139.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  width: auto;
 }
 
 .body{
   padding: 35px;
-  background-color: rgba(15,113,115,0.5) ;
+  
 }
 
 h1{
