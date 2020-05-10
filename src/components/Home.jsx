@@ -8,7 +8,7 @@ const Home =()=> {
   return(
     <div className="body">
       <h1>Vers le confinement et au dela </h1>
-      <p>Parce qu’un confiné n’est pas forcement un imbécile encerclé …<br/>
+      <p className="texte">Parce qu’un confiné n’est pas forcement un imbécile encerclé …<br/>
         Nous vous proposons de partir ou vous le souhaitez selon vos envie 
         depuis votre canapé ! 
         <br/>Voici nos quelques idées du jour 

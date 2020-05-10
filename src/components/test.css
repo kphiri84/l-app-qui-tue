@@ -15,6 +15,10 @@ p, h1, h4 {
     color: rgba(216, 164, 127) !important;
 }
 
+h4{
+    font-family: "Willg";
+}
+
 .Iframe1 {
     background-color: #e7ecef33;
     padding: 20px;

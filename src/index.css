@@ -4,6 +4,12 @@
   
 }
 
+@font-face {
+  font-family: 'Willg';
+  src: local('Willg'), url(./fonts/WILLG___.TTF) format('truetype');
+  
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

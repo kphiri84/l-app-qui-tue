@@ -14,7 +14,7 @@ render() {
       <NavLink to='/Recherche'><p className="Lien">Recherche</p></NavLink>
     </Nav>
     <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+      <FormControl type="text" placeholder="Recherche" className="mr-sm-2" />
       <Button className="boutton" variant="outline-info">Rechercher</Button>
     </Form>
   </Navbar>

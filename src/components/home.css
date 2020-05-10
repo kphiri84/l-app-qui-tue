@@ -17,9 +17,19 @@ body{
   background-color: rgba(15,113,115,0.5) ;
 }
 
-p ,h1{
+h1{
    color: rgba(216, 164, 127) !important;
    font-family: "Carnet-de-voyage";
+}
+
+p, h6{
+  color: rgba(216, 164, 127) !important;
+  font-family: "Willg";
+  font-size: 25px;
+}
+
+h6{
+  max-width: 310px;
 }
 
 .btn{
