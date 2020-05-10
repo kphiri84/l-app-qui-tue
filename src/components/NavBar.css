@@ -1,7 +1,22 @@
 .dark{
-    background-color: rgba(15,113,115) !important;
+    background-color:  rgba(231,236,239,0.6) !important;
 }
 
 .boutton{
     color: rgba(231,236,239)
+}
+
+.Title{
+    color: rgba(39,41,50);
+}
+
+.Lien{
+    color: rgba(231,236,239) !important;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.Lien:hover{
+    text-decoration: none;
 }

@@ -2,14 +2,22 @@
 display : flex ; 
 flex-direction: row;
 justify-content: space-around;
+border-radius: 5px;
+padding: 15px;
+margin: 10px;
+background-color: (231,236,239) ;
 }
 
 body{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('https://img.freepik.com/photos-gratuite/ciel-bleu-fantastique_1203-1929.jpg?size=626&ext=jpg');
+   background-color:rgba(216, 164, 127) !important;
 }
+
+.body{
+    padding: 35px;
+}
+
 .btn{
-    color: rgba(231,236,239)
+    color: rgba(231,236,239) !important;
+    border: 1px solid rgba(231,236,239) !important;
 }
 

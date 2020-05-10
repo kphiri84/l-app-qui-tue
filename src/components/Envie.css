@@ -1,8 +1,15 @@
 .ok{
-    height: 200px;
-   width: 50%;
+    height: 489px;
+   width: 100%;
 }
 
+.btn-primary btn btn-primary {
+    background-color: rgba(216,164,127);
+}
+
+.Iframe{
+    padding: 10px;
+}
 img:active{
     display: flex;
     flex-direction: row;
@@ -10,6 +17,6 @@ img:active{
     max-width: 50%;
 }
 
- p{
-     color : Black
+ h3{
+     color : rgba(39,41,50);
  }
