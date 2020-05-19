@@ -26,8 +26,14 @@ h1{
    font-family: "Carnet-de-voyage";
 }
 
-p, h6{
+p{
   color: rgba(216, 164, 127) !important;
+  font-family: "Willg";
+  font-size: 25px;
+}
+
+h6{
+  color: rgba(39,41,50) !important;
   font-family: "Willg";
   font-size: 25px;
 }
@@ -39,5 +45,9 @@ h6{
 .btn{
   color: rgba(231,236,239) !important;
   border: 1px solid rgba(231,236,239) !important;
+}
+
+.texte{
+  color:  rgba(39,41,50) !important;
 }
 

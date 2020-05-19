@@ -11,7 +11,7 @@ const Home =()=> {
       <p className="texte">Parce qu’un confiné n’est pas forcement un imbécile encerclé …<br/>
         Nous vous proposons de partir ou vous le souhaitez selon vos envie 
         depuis votre canapé ! 
-        <br/>Voici nos quelques idées du jour 
+        <br/>Voici nos quelques idées du jour : 
       </p>
       <div className="iframe">
         {cam.map(e =>{ 

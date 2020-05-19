@@ -11,12 +11,13 @@
     background-color: rgba(15,113,115,0.5);
 }
 
-p, h1, h4 {
+p, h1{
     color: rgba(216, 164, 127) !important;
 }
 
 h4{
     font-family: "Willg";
+    color: rgba(39,41,50);
 }
 
 .Iframe1 {
