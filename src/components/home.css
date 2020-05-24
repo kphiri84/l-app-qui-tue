@@ -51,3 +51,7 @@ h6{
   color:  rgba(39,41,50) !important;
 }
 
+h1{
+  font-size: 50px !important;
+  padding: 30px;
+}

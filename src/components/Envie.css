@@ -22,7 +22,8 @@ img:active{
     max-width: 50%;
 }
 
- h3{
+ .text-carousel{
      color : rgb(255, 255, 255);
-     -webkit-text-stroke: 0.3px rgb(255, 255, 255);
+     text-shadow: 3px 2px 2px rgb(0, 0, 0);
+     font-weight: bold !important;
  }

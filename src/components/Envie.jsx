@@ -34,7 +34,7 @@ console.log(camCategory)
             src="https://cdn.france-montagnes.com/sites/default/files/styles/header_webzine/public/header/banniere_23.jpg?itok=PfHNBrxl"
             alt="First slide"/>
           <Carousel.Caption>    
-            <h3>Partir à la montagne</h3>
+            <h3 className="text-carousel">Partir à la montagne</h3>
             <Link to={`/resultat/mountain`}>
               <Button className="btn-primary"onClick ={() => setCategory('mountain') }>Découvrez la selection </Button>
             </Link>
@@ -46,7 +46,7 @@ console.log(camCategory)
             src="https://fr.sx-magazine-wp.sixt.io/magazine/wp-content/uploads/sites/3/2018/06/paradise-697151_1920.jpg"
             alt="Seconde slide"/>
           <Carousel.Caption>
-            <h3>Partir à la mer</h3>
+            <h3 className="text-carousel">Partir à la mer</h3>
             <Link to={`/resultat/beach`}>
               <Button className="btn-primary"onClick ={() =>setCategory('beach')}>Découvrez la selection </Button> 
             </Link>
@@ -58,7 +58,7 @@ console.log(camCategory)
             src="https://i.f1g.fr/media/eidos/805x453_crop/2019/12/10/XVM61ef0d94-1a9d-11ea-9fbb-497aff12b716.jpg"
             alt="Third slide"/>
           <Carousel.Caption> 
-            <h3>Partir dans les plus belles villes</h3>
+            <h3 className="text-carousel">Partir dans les plus belles villes</h3>
             <Link to={`/resultat/city`}>
               <Button className="btn-primary btn btn-primary" onClick ={() => setCategory('city')}>Découvrez la selection </Button>  
             </Link>

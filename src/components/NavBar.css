@@ -21,3 +21,12 @@
 a:hover{
     text-decoration: none !important;
 }
+
+input::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+
+  input[list]{
+    background-color: white;
+    color: black;
+  }
