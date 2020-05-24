@@ -14,10 +14,10 @@ class Router extends React.Component {
         <NavBar />
         <Switch>
           <Route exact path = "/" component={Home} />
-          <Route path= "/Recherche" component={Envie} />
+          <Route exact path= "/Recherche" component={Envie} />
           {/* <Route path= "/search/:countryName" component={Test2} /> */}
-          <Route path= "/search/:countryName" component={Test2} />
-          <Route path= "/resultat/:categoryName" component={Test} />
+          <Route exact path= "/search/:countryName" component={Test2} />
+          <Route exact path= "/resultat/:categoryName" component={Test} />
         </Switch>   
         <Footer />
       </>
